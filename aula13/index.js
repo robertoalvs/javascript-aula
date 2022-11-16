@@ -15,6 +15,6 @@ function moveon() {
 
     let pergunta = confirm("Ready to move on?");
     if (pergunta) window.location = "https://google.com";
+    
     setTimeout(moveon, 60000);
 }
-
