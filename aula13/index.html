@@ -5,8 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estudando JavaScript</title>
+
 </head>
 <body>
-    <script src="../aula13/index.js"></script>
+    <p>Teste</p>
+
+    <script>
+        function moveon() {
+
+    let pergunta = confirm("Ready to move on?");
+    if (pergunta) window.location = "https://google.com";
+    setTimeout(moveon, 60000);
+}
+
+    </script>
 </body>
 </html>
