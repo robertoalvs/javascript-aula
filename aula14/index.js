@@ -64,6 +64,6 @@ num1 = parseFloat(num1.toFixed(2));
 console.log(num1);
 console.log(Number.isInteger(num1)); */
 
-let teste = 'Testetetete';
+let num1 = 4;
 
-console.log (teste.replace("t", "H"));
+console.log (num1 == 5, );
