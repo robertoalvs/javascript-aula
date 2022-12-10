@@ -13,6 +13,14 @@ console.log(n.toPrecision(10));
                                     */
 
 
-let n =10;
+// let n =10;
 
-console.log(parseInt("ff", 16));
+// console.log(parseInt("ff", 16));
+
+
+let p = 'x';
+let j ='y';
+
+let igual = ('x = 2 + y= 5');
+
+console.log ('x+y');
