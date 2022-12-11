@@ -77,16 +77,16 @@
 
     <script>
 
-       /* window.alert('Minha primeira mensagem!'); // Você pode colocar ou não o (window.alert)
-        window.confirm('Está gostando de JS?');
-        window.prompt('digite seu nome:'); */
+       /* let n1 = Number.parseInt(prompt('Digite um número:')); // Números INTEIROS
+       let n2 = Number.parseInt(prompt('Digite outro número')); */
 
-        /* alert('Estudando JavaScript'); // Exemplo sem o window
-        confirm('Está gostando de estudar JavaScript?'); */
+       /* let n1 = Number.parseFloat(prompt('Digite um número:')); // Números REAIS com Virgula.
+       let n2 = Number.parseFloat(prompt('Digite outro número')); */ 
 
-       let nome = prompt('Digite seu nome:');  // Quando o usuário digitar seu nome, ele será gravado na variável NOME.
-
-       alert('Muito prazer te receber aqui, ' + nome + "!") ;  // Será exibido na tela um alerta com os dizeres - Muito Prazer te receber aqui + a concatenação da variável NOME + a concatenão de uma !, a esclamação para ser visualizada temos que coloca-la entre aspas duplas "!"
+       let n1 = Number(prompt ('Digite um número')); // Utilizando só Number, o javascript tem que fazer a analize do que é número real ou número inteiro.
+       let n2 = Number(prompt ('Digite outro número'));
+       let soma = n1 + n2;
+       alert(`O resultado da soma de ${n1} + ${n2} é: ${soma}`);
     </script>
 </body>
 </html>
