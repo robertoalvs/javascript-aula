@@ -5,11 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavaScript</title>
+
+    <style>
+
+        body {
+
+    
+        }
+    </style>
 </head>
 <body>
     <script>
         let nome = prompt('Qual é seu nome');
-        document.write(`Oi ${nome}, seu nome tem: ${nome.length} letras`);
+        document.write(`Oi <strong>${nome}</strong>, seu nome tem: ${nome.length} letras <br>`);
+        document.write(`Oi ${nome}, seu nome está em ${nome.toUpperCase()} <br>`);
+        document.write(`Oi ${nome}, seu nome está em ${nome.toLowerCase()}`);
+
     </script>
 </body>
 </html>
