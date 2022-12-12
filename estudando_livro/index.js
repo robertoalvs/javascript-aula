@@ -17,10 +17,9 @@ console.log(n.toPrecision(10));
 
 // console.log(parseInt("ff", 16));
 
-
-let p = 'x';
-let j ='y';
-
-let igual = ('x = 2 + y= 5');
-
-console.log ('x+y');
+let n1 = 1545.5;
+n1.toFixed(2);
+n1.toFixed(2).replace('.', ',');
+n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'});
+console.log(n1);
+           
