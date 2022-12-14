@@ -13,12 +13,34 @@
         // confirm('Está gostando de Javascript');
         // prompt('Digite seu nome');
 
-        let n = 200;
-        let n1 = 200;
-        let s = n + n1;
+        // let nome = prompt('Digite seu nome:');
+        // alert('Muito Prazer, ' + nome + "!");
 
-        
-        console.log (s);
+
+        /*  let n = prompt('Digite um numero');
+            let n1 = prompt('digite outro número:');
+            let soma = n + n1;
+            alert(`A soma de, ${n} + ${n1} é ${soma}`);
+
+            // Aqui o (prompt) não converte quando vc digita um número, ele mantem como STRING, assim ele concatena os números que foram digitados.
+
+        */
+
+       /* let n = Number(prompt ('Digite um número:'));
+         let n1 = Number(prompt ('digite outro número'));
+
+         let soma = n + n1;
+
+         document.write(`A soma de, ${n} + ${n1} é ${soma}`);  // a função document.write exibe no body a mensagem digitada, pelo usuário.
+        */
+
+      let nome = prompt('Digite seu primeiro nome:');
+      let sobrenome = prompt('Digite seu sobrenome:');
+      let idade = Number(prompt('Digite sua idade:'));
+      let ano = Number(prompt('Digite o ano que você nasceu:'));
+
+      document.write(`Meu nome é <strong>${nome.toUpperCase()} ${sobrenome.toUpperCase()}</strong>, tenho ${idade} e nasci em ${ano}!!!`);
+
 
    </script>
 </body>
