@@ -81,9 +81,26 @@ console.log(ig);
 
 */
 
+/*
 
 let n1 = 10;
 let n2 = 20;
 let soma = n1 > n2 && n2 % 2 == 0;  // FALSE  - Quando temos operadores aritmeticos, 
 
-console.log(soma);
+let soma1 = n1 <= n2 || b / 2 == 2;  // || basta ter apenas um verdadeiro, para ser verdadeiro, no exemplo o valor é TRUE.
+
+*/
+
+/*
+let media = 5.5; // VARIÁVEL MEDIA
+media = media += 3;
+
+let resultado = media > 7? 'APROVADO': 'REPROVADO' // A PERGUNTA FOI---- SE A MEDIA FOR MAIOR QUE 7 (?) É 'ARPOVADO'  (: SIGINIFICA SE NÃO) 'REPROVADO'
+
+*/
+
+let x = 8;
+
+let res = x % 2 == 0 ? 5 : 9;
+
+console.log(res);
