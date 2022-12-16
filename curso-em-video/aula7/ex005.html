@@ -5,8 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estudando JS</title>
+    <link rel="stylesheet" href="../aula7/estilo.css">
 </head>
 <body>
-    
+        <h1>Iniciando estudos DOM</h1>
+        <p>Aqui vai o resultado</p>
+        <p>Aprendendo usar o <strong>DOM</strong> em Javascript</p>
+        <div id="msg">clique em mim</div>
+
+        <script>
+
+           // window.document.write(window.document.charset)
+          // document.write(document.URL)
+          let corpo = document.body;
+          let p1 = document.getElementsByTagName('p')[1];
+          let d = document.getElementById('msg')
+          
+          document.write(p1.innerHTML);
+          p1.style.color = 'yellow';
+          corpo.style.background ='black';
+          d.style.background = 'green'
+          d.innerText = ' Estou aguardando...'
+
+        </script>
 </body>
 </html>
