@@ -8,14 +8,20 @@
     <link rel="stylesheet" href="../aula7/estilo.css">
 </head>
 <body>
-        <h1>Iniciando estudos DOM</h1>
+        <div class="msg">
 
-        <p>Aqui vai o resultado</p>
-        <p>Aprendendo usar o <strong>DOM</strong> em Javascript</p>
+          <h1>Iniciando estudos DOM</h1>
+          <p>Aqui vai o resultado</p>
+          <p>Aprendendo usar o <strong>DOM</strong> em Javascript</p>
+          <div id="texto">clique em mim</div>
 
-        <div id="msg">clique em mim</div>
+        </div>
 
         <script>
+
+
+          let id = document.getElementById('msg');
+          id.style.background = 'green';
 
            // window.document.write(window.document.charset)
           // document.write(document.URL)
@@ -29,7 +35,7 @@
           // d.style.background = 'green'
           // d.innerText = ' Estou aguardando...'
 
-          
+
 
         </script>
 </body>

@@ -6,3 +6,18 @@ body {
     color: white;
     font: normal 18px arial;
 }
+
+#msg {
+
+    padding: 20px;
+    height: 500px;
+}
+
+h1 {
+    text-align: center;
+    color: black;
+    text-shadow: 4px 3px 5px black;
+    border: 2px dotted;
+    padding: 20px;
+    border-radius: 10px;
+}
