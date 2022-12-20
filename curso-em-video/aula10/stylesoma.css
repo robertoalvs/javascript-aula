@@ -7,7 +7,10 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1.2em;
     margin: auto;
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 h1 {
@@ -27,6 +30,21 @@ h1 {
 #num01:hover {
 
     background-color: rgba(137, 43, 226, 0.316);
+}
+
+#num01 {
+
+   margin-bottom: 5px;
+}
+
+#num02 {
+
+    margin-top: 5px;
+}
+
+.botao:hover {
+
+    box-shadow: 2px 2px red;
 }
 
 #somaa {
