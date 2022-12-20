@@ -41,13 +41,17 @@
 
       // document.write(`Meu nome é <strong>${nome.toUpperCase()} ${sobrenome.// toUpperCase()}</strong>, tenho ${idade} e nasci em ${ano}!!!`);
 
-      let nome = (prompt('Digite seu nome:'));
-      let sobre = (prompt('digite seu sobrenome:'));
-      let datanasci = Number(prompt('Digite o ano que voce nasceu:'));
-      let anoatual = Number(prompt('Digite o ano atual:'));
-      let somaidade = anoatual - datanasci;
-      
-      document.write(`Seu nome é: ${nome.toUpperCase()} ${sobre.toUpperCase()}, sua idade é: <strong>${somaidade}</strong>`);
+      let nome = prompt('Digite seu nome:');
+      let conf = confirm('Confirme seu nome!');
+      let sobrenome = prompt('Digite seu sobrenome:');
+      let nasci = Number(prompt('Digite o ano que você nasceu:'));
+      let ano = Number(prompt('Digite o ano atual'));
+
+      let soma = ano - nasci;
+
+      // alert(`Seu nome é: ${nome} ${sobrenome}, e você tem ${soma} anos. Parabéns você foi contratado!!!`)
+
+      document.write(`Seu nome é: <strong>${nome} ${sobrenome}</strong>, e você tem <strong>${soma}</strong> anos. Parabéns você foi contratado!!!`)
 
    </script>
 </body>
