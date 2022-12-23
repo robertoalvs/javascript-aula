@@ -15,11 +15,15 @@ function verificado() {
     if (total <= 17) {
 
         div.innerHTML += `<p> Você é Menor de idade <strong class"restrito"> 'ACESSO RESTRITO'!!! </strong> <p> `
+        
+        div.style.color = 'red'
     }
 
     else {
 
         div.innerHTML += `<p> Você é Maior de idade <strong> 'ACESSO LIBERADO'!!! </strong> <p> `
+
+        div.style.color = 'blue'
 
     }
 }
