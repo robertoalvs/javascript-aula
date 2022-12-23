@@ -1,0 +1,71 @@
+@charset "UTF-8";
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.1em;
+}
+
+body {
+
+    background-image: linear-gradient(to left, green, yellow);
+}
+
+h1 {
+    text-align: center;
+    margin: 10px 0 20px 0;
+    font-size: 2em;
+    text-shadow: 2px 2px 2px black;
+}
+
+h2 {
+
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+input {
+
+    margin: 0 0 15px 20px;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+span {
+
+    display: block;
+    margin-bottom: -20px;
+    margin-left: 20px;
+}
+
+.botao {
+
+    width: 100px;
+    font-size: 1em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: 1px 1px 1px black;
+}
+
+.botao:hover {
+
+    background-color: chartreuse;
+}
+
+#resposta {
+
+    margin-left: 20px;
+    margin-bottom: 2px;
+}
+
+strong {
+
+    border: 2px solid black;
+    padding: 3px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px black;
+}
