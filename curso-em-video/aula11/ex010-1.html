@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando conhecimento</title>
+</head>
+<body>
+     País de Origem <input type="text" name="text" id="itext">
+     <input type="button" value="Verificar" onclick="verificar()">
+
+     <div id="res"></div>
+
+     <script>
+
+        function verificar() {
+
+            let country = document.getElementById('itext') // variável country = id itext, (input type text)
+            let res = document.getElementById('res') // variável res = criado o id na (div) em html
+            let cal = String(country.value) // calcula a variável (country)
+
+            res.innerHTML = `Você não mora ${country}`
+        }
+     </script>
+</body>
+</html>

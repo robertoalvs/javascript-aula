@@ -5,10 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DETRAN</title>
+    <style>
+
+        #res {
+
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
     <h1>Sitemas de Multas</h1>
-    Velocidade do Carro<input type="number" name="vel" id="ivel">Km/h
-    <input type="button" value="Verificar">
+    Velocidade do Carro <input type="number" name="vel" id="ivel"> Km/h
+    <input type="button" value="Verificar" onclick="calcular()">
+
+    <div id="res"></div>
+
+    <script>
+        
+
+        function calcular() {
+            let vel = document.getElementById('ivel')
+            let res = document.getElementById('res')
+            let cal = Number(vel.value)
+
+            res.innerHTML = `Sua velocidade atual é de ${cal}Km/h`
+
+            if (cal > 60) {
+
+                res.innerHTML = `Sua velocidade atual é de ${cal}Km/h`
+                res.innerHTML += `<p> Você foi <strong>MULTADO!!!</strong>, ir até o <strong>DETRAN </strong> </p>`
+            }
+
+            res.innerHTML += `<p>Dirija sempre com cuidado, respeite a vida!</p>` // Nào esquecer de usar += para concatenar sua mensagem, se não ele apagarar a outra mensagem.
+        }
+    </script>
 </body>
 </html>
