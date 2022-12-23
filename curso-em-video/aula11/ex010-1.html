@@ -16,12 +16,24 @@
 
         function verificar() {
 
-            let country = document.getElementById('itext') // variável country = id itext, (input type text)
+            let país = document.getElementById('itext') // variável country = id itext, (input type text)
             let res = document.getElementById('res') // variável res = criado o id na (div) em html
-            let cal = String(country.value) // calcula a variável (country)
+            let cal = String(país.value) // calcula a variável (country)
 
-            res.innerHTML = `Você não mora ${country}`
+            res.innerHTML = `Você mora no ${cal}, `
+
+            if (cal != 'BRASIL') {
+
+                res.innerHTML += `Você é ESTRANGEIRO!!!`
+            }
+
+            else {
+
+                res.innerHTML = `Você é BRASILEIRO!!!`
+            }
         }
+
+        
      </script>
 </body>
 </html>
