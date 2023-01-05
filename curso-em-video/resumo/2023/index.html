@@ -16,7 +16,7 @@
     Digite o ano de seu nascimento: <input type="number" name="nasci" id="inasci"> <br>
     <input type="button" value="Verificar" onclick="verificar()"> 
     <input type="reset" value="Limpar">
-
+    
     <div id="res"></div>
 
 
@@ -38,10 +38,14 @@
             let nome1 = (nome.value)
             let sobrenome1 = (sobrenome.value)
 
+            let idade = (num1 - num2)
+
             div.innerHTML = `<p> Nome: <strong>${nome1}</strong> </p>`
             div.innerHTML += `<p> Sobrenome: <strong>${sobrenome1}</strong> <p>`
             div.innerHTML += `<p> Ano Atual: <strong>${num1}</strong> <p>`
             div.innerHTML += `<p> Sobrenome: <strong>${num2}</strong> <p>`
+            
+            div.innerHTML += `<p> Sua idade é: <strong>${idade}</strong> <p>`
         }
     </script>
     
