@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avaliação Detran</title>
+</head>
+<body>
+
+    <h1>Verificação para a Prova do Detran</h1>
+
+    Digite seu nome: <input type="text" name="name" id="iname"> <br>
+    Digite seu Sobrenome: <input type="text" name="sobre" id="isobre"> <br>
+    Digite o ano atual: <input type="number" name="ano" id="iano"> <br>
+    Digite o ano de seu nascimento: <input type="number" name="nasci" id="inasci"> <br>
+    <input type="button" value="Verificar" onclick="verificar()"> 
+    <input type="reset" value="Limpar">
+
+    <div id="res"></div>
+
+
+    <script>
+
+        function verificar() {
+
+            let nome = document.getElementById('iname')
+            let sobrenome = document.getElementById('isobre')
+
+            let div = document.getElementById('res')
+
+            let ano = document.getElementById('iano')
+            let nasci = document.getElementById('inasci')
+
+            let num1 = Number(ano.value)
+            let num2 = Number(nasci.value)
+
+            let nome1 = (nome.value)
+            let sobrenome1 = (sobrenome.value)
+
+            div.innerHTML = `<p> Nome: <strong>${nome1}</strong> </p>`
+            div.innerHTML += `<p> Sobrenome: <strong>${sobrenome1}</strong> <p>`
+            div.innerHTML += `<p> Ano Atual: <strong>${num1}</strong> <p>`
+            div.innerHTML += `<p> Sobrenome: <strong>${num2}</strong> <p>`
+        }
+    </script>
+    
+</body>
+</html>
