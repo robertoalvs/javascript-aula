@@ -5,17 +5,73 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Avaliação Detran</title>
+
+    <style>
+
+        h1 {
+
+            margin: 30px 0 50px 20px;
+            font-family: fantasy;
+            font-size: 3em;
+            letter-spacing: 2px;
+        }
+
+        input {
+
+            text-align: center;
+            margin: 0 0 10px 0;
+            padding: 7px;
+            border-radius: 15px;
+            box-shadow: 1px 1px 1px 1px black;
+            font-size: 1em;
+            font-weight: bolder;
+        }
+
+        input:hover {
+
+            background-color: rgba(131, 87, 173, 0.432);
+        
+        }
+
+        span {
+
+            margin-left: 20px;
+            font-size: 1.75em;
+        }
+
+        .button {
+
+            margin-left: 20px;
+            margin-top: 20px;
+            width: 100px;
+            background-color: rgba(250, 235, 215, 0.671);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: bolder;
+            font-size: 1em;
+        }
+
+        div {
+
+            
+            width: 700px;
+            margin-top: 20px;
+            padding: 10px;
+            border-radius: 20px;
+            background-color: rgba(114, 75, 83, 0.205);
+            font-size: 2em;
+        }
+    </style>
 </head>
 <body>
 
     <h1>Verificação para a Prova do Detran</h1>
 
-    Digite seu nome: <input type="text" name="name" id="iname"> <br>
-    Digite seu Sobrenome: <input type="text" name="sobre" id="isobre"> <br>
-    Digite o ano atual: <input type="number" name="ano" id="iano"> <br>
-    Digite o ano de seu nascimento: <input type="number" name="nasci" id="inasci"> <br>
-    <input type="button" value="Verificar" onclick="verificar()"> 
-    <input type="reset" value="Limpar">
+    <span>Digite seu nome:</span> <input type="text" name="name" id="iname"> <br>
+    <span>Digite seu Sobrenome:</span> <input type="text" name="sobre" id="isobre"> <br>
+    <span>Digite o ano atual:</span> <input type="number" name="ano" id="iano"> <br>
+    <span>Digite o ano de seu nascimento:</span> <input type="number" name="nasci" id="inasci"> <br>
+    <input class="button" type="button" value="Verificar" onclick="verificar()"> 
+    <input class="button" type="reset" value="Limpar">
     
     <div id="res"></div>
 
@@ -43,9 +99,20 @@
             div.innerHTML = `<p> Nome: <strong>${nome1}</strong> </p>`
             div.innerHTML += `<p> Sobrenome: <strong>${sobrenome1}</strong> <p>`
             div.innerHTML += `<p> Ano Atual: <strong>${num1}</strong> <p>`
-            div.innerHTML += `<p> Sobrenome: <strong>${num2}</strong> <p>`
+            div.innerHTML += `<p> Nascimento: <strong>${num2}</strong> <p>`
             
-            div.innerHTML += `<p> Sua idade é: <strong>${idade}</strong> <p>`
+           // div.innerHTML += `<p> Sua idade é: <strong>${idade}</strong> <p>`
+
+                if (idade < 18) {
+
+                    div.innerHTML += `<p> Sua idade é: <strong> ${idade}</strong> VOCÊ NÃO PODE FAZER O ENXAME!!!<p>`
+
+                }
+
+                else {
+
+                    div.innerHTML += `<p> Sua idade é: <strong>${idade}</strong> PARABÉNS VOCÊ ESTÁ HABILITADO PARA FAZER A PROVA!!!<p>`
+                }
         }
     </script>
     
