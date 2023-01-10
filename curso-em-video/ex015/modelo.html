@@ -5,26 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modelo de Exrcício</title>
-    <link rel="stylesheet" href="../aula13/css.css">
+    <link rel="stylesheet" href="../ex015/css.css">
 </head>
 <body onload="carregar()">
 
     <header>
 
-        <h1>Hora do dia</h1>
+        <h1>Verificador de Idade</h1>
 
     </header>
 
     <section>
 
-        <div id="msg">
-            Aqui vai aparecer a hora
+        <div>
+
+            <p>Ano de Nascimento
+
+                <input type="number" name="ano" id="iano" min="0">
+            </p>
+            
+            <p>Sexo
+
+                <input type="radio" name="radsex" id="imasc" checked>
+                <label for="imac">Masculino</label>
+                <input type="radio" name="radsex" id="ifem">
+                <label for="ifem">Feminino</label>
+            </p>
+
+            <p>
+                <input type="button" value="Verificar" onclick="verificar()">
+            </p>
+
         </div>
 
-        <div id="foto">
-            <img id="imagem" src="../aula13/img/manha250.png" alt="Foto-Manhã">
-        </div>
+        <div id="res">
 
+            Preencha os dados acima para ver o resultado!
+
+        </div>
        
     </section>
 
@@ -34,6 +52,6 @@
 
     </footer>
 
-    <script src="../aula13/script01.js"></script>
+    <script src="../ex015/script01.js"></script>
 </body>
 </html>
