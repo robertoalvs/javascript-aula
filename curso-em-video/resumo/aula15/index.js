@@ -6,15 +6,14 @@ function verificar() {
     let img = document.getElementById('foto')
     let input = document.getElementById('inum')
     let res = document.getElementById('res')
-    
+    let genero = document.getElementsByName('radiosex')
     let num = Number(input.value)
 
     let resposta = ano - num
-
     //res.innerHTML = `Sua idade é: ${resposta} [REPROVADO!]`
 
     if (resposta >= 0 && resposta < 18) {
-
+        
         res.innerHTML = `Sua idade é: ${resposta} [REPROVADO!]`
         img.src = '../aula15/img/stop.png'
         
