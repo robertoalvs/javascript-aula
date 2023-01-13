@@ -18,32 +18,29 @@ function verificar() {
     if (num == 0 || num > ano) {
         
         window.alert('[ERRO!] Verifique o ano digitado.')
-        //res.innerHTML = `Sua idade é: ${resposta} [REPROVADO!]`
-        //img.src = '../aula15/img/stop.png'
-        //document.getElementById('sec').style.background = 'red'
         
-
+        
     } else if (resposta >= 0 && resposta < 18) {
 
-        res.innerHTML = `[REPROVADO!]`
+        res.innerHTML = `<strong> [REPROVADO!] </strong>`
         img.src = '../aula15/img/stop.png'
         document.getElementById('sec').style.background = 'red'
 
 
         if (sexo[0].checked) {
 
-            gênero = '<strong> Homem </strong>'
+            gênero = 'Homem'
 
         } else if (sexo[1].checked) {
 
-            gênero = '<strong> Mulher </strong>'
+            gênero = 'Mulher'
         }
 
         ress.innerHTML = `${gênero} com ${resposta} anos.`
 
     } else {
 
-        res.innerHTML = `[APROVADO!]`
+        res.innerHTML = `<strong> [APROVADO!] </strong>`
         img.src = '../aula15/img/sinal-verde.png'
         document.getElementById('sec').style.background = 'green'
 
@@ -51,11 +48,11 @@ function verificar() {
 
         if (sexo[0].checked) {
 
-            gênero = '<strong> Homem </strong>'
+            gênero = 'Homem'
 
         } else if (sexo[1].checked) {
 
-            gênero = '<strong> Mulher </strong>'
+            gênero = 'Mulher'
         }
 
         ress.innerHTML = `${gênero} com ${resposta} anos.`
