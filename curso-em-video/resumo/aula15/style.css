@@ -13,16 +13,28 @@ h1 {
 header {
 
     display: flex;
-    align-items: center;
     flex-direction: column;
+    align-content: space-between;
+    align-items: center;
+    justify-content: center;
+    
+
 }
 
 input {
 
-    margin: auto;
     padding: 5px;
     margin-bottom: 5px;
     border-radius: 5px;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+label {
+
+    vertical-align: middle;
+    display: inline-block;
+        
 }
 
 section {
