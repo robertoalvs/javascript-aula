@@ -3,6 +3,22 @@
 body {
 
     background-color: cadetblue;
+    margin-top: 50px;
+}
+
+#container {
+
+    border: 2px solid black;
+    width: 700px;
+    height: 700px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px black;
+}
+
+#container:hover {
+
+    background-color: rgba(0, 255, 255, 0.11);
 }
 
 h1 {
@@ -17,8 +33,7 @@ header {
     align-content: space-between;
     align-items: center;
     justify-content: center;
-    
-
+    margin-top: 50px;
 }
 
 input {
@@ -30,11 +45,18 @@ input {
     display: inline-block;
 }
 
-label {
+div#label {
 
     vertical-align: middle;
     display: inline-block;
+    margin: 10px 0 10px 0;  
         
+}
+
+.radio {
+
+    height: 20px;
+    width: 20px; 
 }
 
 section {
@@ -52,6 +74,13 @@ section {
     text-align: center;
     margin-bottom: 10px;
     font-size: 2em;
+}
+
+#resp {
+
+    text-align: center;
+    font-size: 2em;
+    font-weight: bolder;
 }
 
 img {

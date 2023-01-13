@@ -9,51 +9,65 @@
 </head>
 <body>
 
-    <header>
+    <div id="container">
 
-        <h1>Teste Detran</h1>
+        <header>
 
-        <label for="inum">Digite o ano de nascimento:
+            <h1>Teste Detran</h1>
 
-                <input class="input" type="number" name="num" id="inum">
-                <input class="input" type="button" value="Verificar" onclick="verificar()">
+            <label for="inum">Digite o ano de nascimento: <br>
+
+                    <input class="input" type="number" name="num" id="inum" required>
+
+                    <input class="input" type="button" value="Verificar" onclick="verificar()">
         
-        </label>     
+            </label>
         
-            <label for="masc">Masculino
+                <div id="label">
 
-             <input class="radio" type="radio" name="radiosex" id="masc">
+                    <form action="../aula15/aquivo.php" method="get">
 
-            </label>
-            
-            <label for="fem">Feminino
+                        <label for="masc">Masculino
 
-             <input class="radio" type="radio" name="radiosex" id="fem">
+                         <input class="radio" type="radio" name="radiosex" id="masc" required>
 
-            </label>
-            
+                        </label>
 
-    </header>
+                        <label for="fem">Feminino
 
-    <section id="sec">
+                         <input class="radio" type="radio" name="radiosex" id="fem" required>
 
-        <div id="res">
+                        </label>
 
-            Sua idade é:
+                    </form>
 
-        </div>
+                </div>
+        
+        </header>
 
-        <div id="picture">
+        <section id="sec">
 
-            <img id="foto" src="../aula15/img/detran.png" alt="Detran SP">
+            <div id="res"></div>
 
-        </div>
+            <div id="picture">
 
-    </section>
-    <footer>
+                <img id="foto" src="../aula15/img/detran.png" alt="Detran SP">
 
-        <p>&copy; Roberto Alves</p>
-    </footer>
+            </div>
+
+            <div id="resp"></div>
+
+        </section>
+
+        <footer>
+
+            <p>&copy; Roberto Alves</p>
+
+        </footer>
+
+    </div>
+
     <script src="../aula15/index.js"></script>
+
 </body>
 </html>
