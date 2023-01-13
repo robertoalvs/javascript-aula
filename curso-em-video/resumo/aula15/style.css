@@ -26,6 +26,18 @@ h1 {
     text-align: center;
 }
 
+strong {
+
+    animation: fadeinfadeout 0.8s linear infinite;
+}
+
+@keyframes fadeinfadeout {
+
+    0% {opacity: 0;}
+    50% {opacity: 0.2;}
+    100% {opacity: 1;}
+}
+
 header {
 
     display: flex;

@@ -32,10 +32,11 @@ function verificar() {
 
         if (sexo[0].checked) {
 
-            gênero = 'Homem'
+            gênero = '<strong> Homem </strong>'
+
         } else if (sexo[1].checked) {
 
-            gênero = 'Mulher'
+            gênero = '<strong> Mulher </strong>'
         }
 
         ress.innerHTML = `${gênero} com ${resposta} anos.`
@@ -50,10 +51,11 @@ function verificar() {
 
         if (sexo[0].checked) {
 
-            gênero = 'Homem'
+            gênero = '<strong> Homem </strong>'
+
         } else if (sexo[1].checked) {
 
-            gênero = 'Mulher'
+            gênero = '<strong> Mulher </strong>'
         }
 
         ress.innerHTML = `${gênero} com ${resposta} anos.`
