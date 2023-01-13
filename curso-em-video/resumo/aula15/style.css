@@ -4,8 +4,8 @@ body {
 
     background-color: cadetblue;
     margin-top: 50px;
+   /* background-image: linear-gradient(to left, rgba(52, 196, 52, 0.534), rgba(226, 226, 28, 0.651) ); */
 }
-
 #container {
 
     border: 2px solid black;
@@ -18,7 +18,7 @@ body {
 
 #container:hover {
 
-    background-color: rgba(0, 255, 255, 0.11);
+    background-color: rgba(20, 88, 6, 0.11);
 }
 
 h1 {

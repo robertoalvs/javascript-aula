@@ -38,14 +38,15 @@ function verificar() {
             gênero = 'Mulher'
         }
 
-        ress.innerHTML = `<strong>${gênero}</strong> com ${resposta} anos.`
+        ress.innerHTML = `${gênero} com ${resposta} anos.`
 
-        
     } else {
 
         res.innerHTML = `[APROVADO!]`
         img.src = '../aula15/img/sinal-verde.png'
         document.getElementById('sec').style.background = 'green'
+
+       // document.body.style.background = 'linear-gradient(to left, rgba(52, 196, 52, 0.534), rgba(226, 226, 28, 0.651) )'
 
         if (sexo[0].checked) {
 
@@ -55,7 +56,7 @@ function verificar() {
             gênero = 'Mulher'
         }
 
-        ress.innerHTML = `<strong>${gênero}</strong> com ${resposta} anos.`
+        ress.innerHTML = `${gênero} com ${resposta} anos.`
 
     }
 }
