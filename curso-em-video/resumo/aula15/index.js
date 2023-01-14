@@ -15,7 +15,7 @@ function verificar() {
 
     //res.innerHTML = `Sua idade é: ${resposta} [REPROVADO!]`
 
-    if (num == 0 || num > ano) {
+    if (num == 0 || num < 1900 || num > ano) {
         
         window.alert('[ERRO!] Verifique o ano digitado.')
         
