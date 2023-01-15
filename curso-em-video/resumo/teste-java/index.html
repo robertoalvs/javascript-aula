@@ -8,19 +8,57 @@
 
     <style>
 
+        body {
 
+            background-color: rgba(137, 43, 226, 0.391);
+        }
+
+        h1 {
+
+            text-align: center;
+            text-shadow: 2px 2px 10px black;
+        }
+
+        #box-jogos {
+
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+        }
+
+        .botao {
+
+            margin-left: 20px;
+        }
+
+        label {
+
+            vertical-align: middle;
+            margin-left: 5px;
+        }
+
+        #res {
+
+            text-align: center;
+            font-size: 2em;
+            margin-top: 20px;
+        }
+        
     </style>
 </head>
 <body>
     
-    <h1>Java if and else - && ||</h1>
+    <h1>Javascript condições if and else</h1>
 
-        <div>
+        <div id="box-jogos">
 
-            <label for="ifut"><input type="checkbox" name="futebol" id="ifut">Futebol</label>
-            <label for="ibasq"><input type="checkbox" name="basquete" id="ibasq">Basquete</label>
-            <label for="iten"><input type="checkbox" name="tennis" id="iten">Tênis</label>
-            <input type="button" value="Verificar" onclick="checar()">
+            <label for="ifut"><input type="checkbox" name="box" id="ifut">Futebol</label>
+            <label for="ibasq"><input type="checkbox" name="box" id="ibasq">Basquete</label>
+            <label for="iten"><input type="checkbox" name="box" id="iten">Tênis</label>
+            <input class="botao" type="button" value="Verificar" onclick="checar()">
+
         </div>
 
         <div id="res"></div>
