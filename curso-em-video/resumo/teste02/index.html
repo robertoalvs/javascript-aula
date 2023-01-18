@@ -5,8 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teste JavaScript</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     
+           <h1>Verificação de idade Detran SP</h1>
+
+           <section id="sessao01">
+
+            <div id="inputs">
+
+                <label for="inum">Digite o seu ano de Nascimento<input class="caixa-ano" type="number" name="num" id="inum"></label>
+
+                <input type="button" value="Verificar" onclick="consultar()"> <br>
+
+                <label for="imasc">Masculino <input type="radio" name="sexo" id="imasc"></label>
+
+                <label for="ifem">Feminino <input type="radio" name="sexo" id="ifem"></label>
+
+            </div>
+
+            <div id="resp"></div>
+
+            <div class="foto">
+                <img id="foto" src="../teste02/img/detran.png" alt="DETRAN SP">
+            </div>
+
+            <div id="res"></div>
+
+           </section>
+            <script src="../teste02/index.js"></script>
 </body>
 </html>
