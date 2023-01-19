@@ -96,6 +96,18 @@ p {
     
 }
 
-@media screen {
-    
+@media screen and (max-width: 828px) and (orientation: portrait) {
+
+    #sessao01 {
+
+        
+        width: 400px;
+        height: 550px;
+    }
+
+    h1 {
+
+        font-size: 1.5em;
+    }
+
 }
