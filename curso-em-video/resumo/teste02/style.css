@@ -53,13 +53,14 @@ label {
 
 .foto {
 
-    margin-top: 10%;
+    margin-top: 70px
 }
 
 #resp {
 
-    margin-top: 30px;
-    font-size: 2em;
+    margin-top: 15px;
+    margin-bottom: -15px;
+    font-size: 1.7em;
 }
 
 #res {
