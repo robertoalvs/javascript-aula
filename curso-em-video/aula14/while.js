@@ -1,18 +1,14 @@
 
-
-// Estrutura  (FOR)  é dividida em 3 partes (INICIO; TESTE LOGICO; INCREMENTO)
-
+// Estrutura de repetição com teste logico no inicio.
 
 
 let c = 1
 
-/* while (c <= 10) {
+while (c <= 6) { // while = Enquanto
 
-    console.log (`Recebendo ${c}`)
+    console.log(`Passo ${c}`)
     c++
-} */
 
-for (let c = 1; c <= 10; c++) {
-
-    console.log (`Recebendo ${c}`)
 }
+
+
