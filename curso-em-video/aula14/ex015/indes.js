@@ -11,7 +11,7 @@ function tabuada() {
     // variável n = que será guardada a conversão da string num para número
     let n = Number(num.value)
 
-    // variável c que tem o valor de 1, onde começa a tabuada, que vai de 1 até 10
+    // variável c tem o valor de 1, por que é onde começa a tabuada, que vai de 1 até 10
     let c = 1
 
     if (num.value.length == 0) { // Se não for digitado nada na caixa, será mostrado o alerta de erro.
