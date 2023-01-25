@@ -50,6 +50,11 @@ div#res {
     margin-top: 30px;
 }
 
+option {
+
+    color: blue;
+}
+
 footer {
 
     text-align: center;

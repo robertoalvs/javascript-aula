@@ -17,6 +17,8 @@ function tabuada() {
 
     } else {
 
+        tabu.innerHTML = ''
+
         for ( let c = 1; c <= 10; c++ ) {
 
             let item = document.createElement('option')
