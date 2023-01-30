@@ -9,7 +9,7 @@ do { // DO = faça
    console.log(`Passo ${c}`)
    c++ // c = c + 1
 
-} while (c <= 6) // while = enquanto
+} while (c <= 10) // while = enquanto
 
 
 

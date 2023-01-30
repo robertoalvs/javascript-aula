@@ -15,3 +15,4 @@ for (let c =1; c <= 5; c++ ) { // Esse codigo indica o nÃºmero de vezes que vocÃ
 
     console.log (`Passo ${c}`)
 }
+ 
