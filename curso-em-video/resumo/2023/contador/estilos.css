@@ -2,7 +2,42 @@
 
 
 
+
+body {
+
+    background-color: beige;
+}
+
+h1 {
+
+    text-align: center;
+}
+section {
+
+    background-color: rgba(137, 43, 226, 0.267);
+    padding: 10px;
+    border-radius: 10px;
+    margin: auto;
+    width: 500px;
+}
+
 #inputs {
 
     width: 100px;
+}
+
+input {
+
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+#res {
+
+    padding: 7px;
+}
+
+footer {
+
+    text-align: center;
 }
