@@ -44,10 +44,56 @@ function adicionar () {
 
     // Obs: O inlista vai passar o VALOR e a LISTA.
 
-    alert('Tudo ok')
+    valores.push(Number(num.value))
+    let item = document.createElement('option')
+    item.text = `Valor ${num.value} Adicionado`
+    lista.appendChild(item)
 
     }else {
 
         alert('Valor inválido ou já está na lista.')
+    }
+    num.value = '' // O input com a variável num, vai apagar o qeu o usuário digitou, depois de adicionar.
+
+    num.focus() // Deixa o cursor piscando dentro da caixa do input, como se vc tivesse clicado, para digitar novamente.
+}
+
+function finalizar() { // botão finalizar
+
+    if ( valores.length == 0) { // Se não for digitado nada na caixa
+
+        alert('Adicione Valoeres antes de finalizar!')
+
+
+    }else {
+
+        let tot = valores.length // Variável para saber quantos elementos temos dentro do vetor 
+        let maior = valores[0] // O maior número até o momento será o primeiro
+        let menor = valores[0] // O menor número até o momento será o primeiro
+
+        let soma = 0
+        let media = 0
+
+        for (let pos in valores) { // Para cada posição em in valores eu vou fazer um teste
+
+            soma += valores[pos]
+
+            if (valores[pos] > maior) { // Se os valores na posição pos, for maior do que o maior valor 
+                maior = valores[pos]
+            }
+
+            if (valores[pos] < menor) { // Se os valores na posição pos, for menor do que o menor valor 
+
+                menor = valores[pos]
+            }
+
+        }
+        media = soma / tot
+        res.innerHTML = '' // limpar a div resposta.
+        res.innerHTML += `<p> Ao todo, temos ${tot} números cadastrados.</p>` // mostra a resposta da variável tot na tela
+        res.innerHTML += `<p> O maior valor informado foi ${maior} </p>`
+        res.innerHTML += `<p> O menor valor informado foi ${menor} </p>`
+        res.innerHTML += `<p> Somando todos os valores temos ${soma}. </p>`
+        res.innerHTML += `<p> A média dos Valores digitados é ${media}. </p>`
     }
 }
