@@ -16,5 +16,5 @@ console.log(n2)
 
 let num = 8 
 
-console.log(num--) // incremento
+console.log(num += 5) // incremento
 console.log(num)
