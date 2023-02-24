@@ -1,11 +1,6 @@
 
 
-let num = 5
-
-let num1 = '5'
-
-
-let res = num === num1
-
-console.log(res)
+let media = 5.5
+    media += 3
+console.log(media > 7? 'APROVADO' : 'REPROVADO')
     
