@@ -1,8 +1,8 @@
 
 
-let valores = [8, 1, 3, 4, 9]
-
-
+let num = [8, 1, 3, 4, 9]
+num.sort()
+num[5] = 10
 // console.log(valores[0])
 
 
@@ -17,9 +17,9 @@ let valores = [8, 1, 3, 4, 9]
 } */
 
 
-for (let pos in valores) { // Para cada posição dentro (em)  num
+for (let pos in num) { // Para cada posição dentro de num, ou para cada posição na variável composta eu vou mostrar o NUM[POS] ------ (in = em) ---- (for = para) 
 
     
-    valores.sort()
-    console.log(`A posição ${pos} tem o valor ${valores[pos]}`)
+   
+    console.log(`A posição ${pos} tem o valor ${num[pos]}`)
 }

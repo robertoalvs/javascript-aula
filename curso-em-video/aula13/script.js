@@ -1,4 +1,5 @@
 
+
 function carregar() {
 
 let msg = document.getElementById('msg')
@@ -31,3 +32,5 @@ if (hora >= 0 && hora < 12) {
 }
 
 }
+
+
