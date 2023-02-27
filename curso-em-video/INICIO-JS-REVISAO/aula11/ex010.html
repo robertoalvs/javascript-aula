@@ -11,9 +11,31 @@
         Velocidade do Carro: <input type="number" name="txtvel" id="itxtvel">
         <input type="button" value="Verificar" onclick="calcular()">
 
+        <div id="res"></div>
+
         <script>
 
-            let 
+            
+            
+
+            function calcular() {
+
+            let num = document.getElementById('itxtvel')
+            let n = Number(num.value)
+            let res = document.getElementById('res')
+                
+            
+                if(num.value.length == 0 ) {
+
+                     alert('ERRO!!! Digite sua velocidade')
+
+
+                }else if (n > 60) {
+
+                    res.innerHTML = `Sua velocidade é: ${n}KM/h você foi <strong>MULTADO!!!</strong>`
+                } 
+            }
+
         </script>
 </body>
 </html>
