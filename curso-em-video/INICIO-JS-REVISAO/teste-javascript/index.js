@@ -5,9 +5,7 @@ function carregar() {
     let diia = document.getElementById('diia')
 
     let data = new Date()
-   //let dia = data.getHours()
-
-   dia = 19
+   let dia = data.getHours()
 
     hora.innerHTML = `Agora são <strong>${dia}</strong> horas`
 
