@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+body {
+
+    background-color: rgba(6, 6, 97, 0.61);
+}
+
+h1 {
+    text-align: center;
+}
+
+section {
+
+    width: 400px;
+    height: 450px;
+    background-color: white;
+    border-radius: 15px;
+    margin: auto;
+    padding: 10px;
+}
+
+#res {
+
+    padding: 10px;
+    text-align: center;
+    font-size: 1.3em;
+    
+}
+
+#ano-nasc {
+
+    margin-top: 10px;
+    padding: 10px;
+    margin: auto; 
+}
+
+label {
+
+    vertical-align: baseline;
+}
+
+#botao {
+
+    margin-top: 10px;
+}
+
+img {
+
+    display: block;
+    margin: auto;
+    width: 210px;
+    margin-top: 20px;
+}
+
+footer {
+
+    text-align: center;
+}
