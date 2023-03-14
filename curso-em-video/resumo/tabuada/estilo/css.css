@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+
+
+body {
+
+    background-image: linear-gradient(to left, rgb(82, 82, 226), rgb(235, 235, 118), rgb(235, 111, 111));
+}
+h1 {
+
+    text-align: center;
+}
+
+section {
+
+    margin: auto;
+    width: 500px;
+    background-color: rgba(255, 255, 255, 0.267);
+    border-radius: 12px;
+    box-shadow: 2px 2px 10px black;
+    padding: 10px;
+}
+
+select {
+
+    margin-top: 10px;
+    padding: 20px;
+    background-color: antiquewhite;
+    border: 1px solid black;
+    box-shadow: 2px 2px 10px black;
+    font-size: 1.2em;
+}
