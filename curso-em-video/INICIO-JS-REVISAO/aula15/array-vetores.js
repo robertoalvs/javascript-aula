@@ -1,4 +1,4 @@
-let num = [5, 8, 4]
+let num = [5, 8, 4, 3, 9, 2]
 
 
 
@@ -22,5 +22,6 @@ for ( let pos = 0; pos < num.length; pos++) {
 
 for (let pos in num) { // para cada POSIÇÃO(pos) em "dentro" (in) NUM 
 
+    num.sort()
     console.log(`A posição ${pos} tem o valor ${num[pos]}`)
 }
