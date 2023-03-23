@@ -1,4 +1,4 @@
-function parimp (n) {
+/* function parimp (n) {
 
     if (n%2 == 0) {
 
@@ -13,4 +13,12 @@ function parimp (n) {
 }
 
 let res = parimp(12)
-console.log(res)
+console.log(res) */
+
+function soma(n1, n2) {
+
+    return n1 *n2
+
+}
+
+console.log(soma(2, 5))
